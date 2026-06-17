@@ -52,3 +52,28 @@ body {
     // animation
     animation: fadeIn 1s ease-in-out;
 }
+// Game container
+.game-container {
+    // background color
+    background-color: $card-color;
+    // padding
+    padding: 25px;
+    // border radius
+    border-radius: $border-radius;
+    // box shadow
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    // width
+    width: 500px;
+    // text align
+    text-align: center;
+    // animation    animation: fadeIn 0.8s ease-in-out;
+    animation: fadeIn 0.8s ease;
+
+    // heading style (h1)
+    h1{
+        // margin bottom
+        margin-bottom: 20px;
+        // color
+        color: $primary-color;
+    }
+}

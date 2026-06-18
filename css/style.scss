@@ -106,3 +106,87 @@ body {
         line-height: 1.2;
     }
 }
+// Guess Section of the game
+.guess-section {
+    // margin bottom
+    margin-bottom: 20px;
+
+    // input style
+    input {
+        // padding
+        padding: 10px;
+        // font size
+        font-size: 20px;
+        // border radius
+        border-radius: $border-radius;
+        // border
+        border: none;
+        // width
+        width: 70px;
+        // text align
+        text-align: center;
+    }
+}
+// button style
+button {
+    // padding
+    padding: 10px 20px;
+    // font size
+    font-size: 16px;
+    // border radius
+    border-radius: $border-radius;
+    // border
+    border: none;
+    // background color
+    background-color: $primary-color;
+    // color of the text
+    color: $text-color;
+    // cursor pointer
+    cursor: pointer;
+    // transition
+    transition: background-color 0.3s;
+
+    // hover effect
+    &:hover {
+        // Transform scale
+        transform: scale(1.05);
+    }
+    // disabled state
+    &:disabled {
+        // background color
+        background-color: $card-color;
+        // cursor not allowed
+        cursor: not-allowed;
+    }
+}
+// used letters container
+#usedLetters {
+    // margin bottom
+    margin-bottom: 20px;
+    // font size
+    font-size: 18px;
+}
+// message container
+#message {
+    // font size
+    font-size: 24px;
+    // font weight
+    font-weight: bold;
+    // min height
+    min-height: 40px;
+}
+// win or lose message container
+.win {
+    // color
+    color: $primary-color;
+}
+// lose message container
+.lose {
+    // color
+    color: $danger-color;
+}
+// hidden message container
+.hidden {
+    // display none
+    display: none;
+}

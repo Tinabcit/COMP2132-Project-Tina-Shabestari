@@ -185,3 +185,4 @@ letterInput.addEventListener("keyup", function (event) {
 playAgainButton.addEventListener("click", startGame);
 // Start the game after loading JSON
 loadWords();
+

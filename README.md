@@ -140,16 +140,27 @@ The original image source and reference links have been included in the HTML fil
 ## Project Requirements Completed
 
 ✔ Random word and hint selection
+
 ✔ JSON file loaded using fetch()
+
 ✔ TypeScript game logic
+
 ✔ JavaScript object and custom functions
+
 ✔ SCSS styling with mixins
+
 ✔ Responsive page design
+
 ✔ At least 6 images used
+
 ✔ Relative file paths
+
 ✔ Win and lose conditions
+
 ✔ Play Again functionality
+
 ✔ Animation effects
+
 ✔ Published to GitHub
 
 ---

@@ -3,61 +3,57 @@
 ## Study Hangman Game
 
 ### Author
-**Tina Shabestari**
-Student ID: A01002676
-COMP2132 – JavaScript Frameworks and Server
-BCIT Full Stack Web Development Program
 
----
+Tina Shabestari
+Student ID: A01002676
+COMP2132 Project
+
 ## Project Description
 
-Study Hangman is a browser-based Hangman game developed using HTML, SCSS, TypeScript, JavaScript, and JSON. The purpose of the game is to correctly guess a hidden word before reaching the maximum number of incorrect guesses.
+This project is a browser-based Hangman game that I created for COMP2132 using HTML, SCSS, TypeScript, JavaScript, and JSON.
 
-At the beginning of each game, a random category, word, and hint are selected from a JSON file. The player uses the hint to help guess the word one letter at a time. Correct guesses reveal the matching letters in the word, while incorrect guesses increase the hangman count and display the next hangman image.
+The game randomly selects a category, word, and hint from a JSON file each time a new game starts. The player must guess the hidden word one letter at a time using the input box. If the player guesses a correct letter, it is revealed in the word. If the player guesses incorrectly, the hangman image changes and the number of remaining attempts decreases.
 
-The game keeps track of letters that have already been guessed and prevents duplicate guesses. The application continuously checks whether the player has won or lost. A player wins by correctly revealing all letters in the word and loses after six incorrect guesses.
+The game keeps track of the letters that have already been guessed so the same letter cannot be entered multiple times. The player wins when all letters in the word have been revealed and loses after six incorrect guesses.
 
-Once the game is finished, the player is shown a message indicating whether they won or lost and is given the option to start a new game by clicking the Play Again button.
+When the game ends, a message is displayed showing whether the player won or lost. The player can then click the Play Again button to start a new game with a different word and hint.
 
----
 ## Features
 
 * Random word selection
 * Random category selection
 * Hint system
-* Multiple word categories
+* Multiple categories
 * Tracks guessed letters
 * Prevents duplicate guesses
 * Remaining attempts counter
 * Win and lose conditions
 * Play Again button
-* Responsive design
-* JSON data loading using fetch()
+* Responsive layout
+* JSON file loaded using fetch()
 * TypeScript game logic
-* SCSS styling with mixins
-* CSS fade-in animation
-* JavaScript image animation
+* SCSS styling
+* CSS and JavaScript animations
 * Hangman image progression
 
----
+## Categories
 
-## Categories Included
+The game includes words from several categories:
 
-* 💻 Coding
-* 🌐 Web Development
-* 📚 School
-* 🎮 Gaming
-* 🎨 Art
-* 🍔 Food
-* ⚽ Sports
-* 🚗 Transportation
-* 🎵 Music
-* 📱 Technology
+* Coding
+* Web Development
+* School
+* Gaming
+* Art
+* Food
+* Sports
+* Transportation
+* Music
+* Technology
 
----
 ## Technologies Used
 
-* HTML5
+* HTML
 * SCSS (SASS)
 * TypeScript
 * JavaScript
@@ -65,111 +61,51 @@ Once the game is finished, the player is shown a message indicating whether they
 * Git
 * GitHub
 
----
-## Learning Outcomes
+## What I Learned
 
-This project demonstrates several concepts learned in COMP2132:
+Through this project I practiced:
 
 * Working with JSON files
 * Using fetch requests
-* Creating custom functions
-* Using JavaScript objects
+* Creating and using objects
+* Writing functions
 * DOM manipulation
 * Event handling
-* Loops and conditional statements
-* Random number generation
-* TypeScript interfaces and type annotations
-* SCSS variables and mixins
+* Loops and conditionals
+* TypeScript
+* SCSS mixins
 * Responsive web design
-* Version control with Git and GitHub
+* Git and GitHub version control
 
----
-## Folder Structure
+## Project Files
 
-```text
-project
-│
-├── html
-│   └── index.html
-│
-├── css
-│   ├── style.scss
-│   └── style.css
-│
-├── js
-│   ├── script.ts
-│   └── script.js
-│
-├── data
-│   └── words.json
-│
-├── images
-│   ├── hangman0.png
-│   ├── hangman1.png
-│   ├── hangman2.png
-│   ├── hangman3.png
-│   ├── hangman4.png
-│   ├── hangman5.png
-│   └── hangman6.png
-│
-└── README.md
-```
-
----
+* index.html
+* style.scss
+* style.css
+* script.ts
+* script.js
+* words.json
+* hangman0.png to hangman6.png
 
 ## How To Play
 
 1. Read the category and hint.
-2. Enter one letter at a time in the input box.
+2. Enter one letter in the input box.
 3. Click the Guess Letter button or press Enter.
-4. Correct letters will be revealed in the hidden word.
-5. Incorrect guesses will increase the hangman count.
-6. You have six incorrect guesses before losing the game.
-7. Guess all letters correctly to win.
+4. Correct letters will appear in the word.
+5. Incorrect guesses will update the hangman image.
+6. The player loses after six incorrect guesses.
+7. The player wins when the entire word is revealed.
 8. Click Play Again to start a new game.
-
----
 
 ## Image Credits
 
-The images used in this project were found online through Google and are used for educational purposes only as part of this COMP2132 project.
-The original image source and reference links have been included in the HTML file comments. All credit for the images belongs to their original creators and owners.
+The images used in this project were found online through Google and are being used for educational purposes only.
 
----
+The original image source and reference link have been included in the HTML comments. All credit belongs to the original creator of the images.
 
-## Project Requirements Completed
-
-✔ Random word and hint selection
-
-✔ JSON file loaded using fetch()
-
-✔ TypeScript game logic
-
-✔ JavaScript object and custom functions
-
-✔ SCSS styling with mixins
-
-✔ Responsive page design
-
-✔ At least 6 images used
-
-✔ Relative file paths
-
-✔ Win and lose conditions
-
-✔ Play Again functionality
-
-✔ Animation effects
-
-✔ Published to GitHub
-
----
-
-## Repository
-
-GitHub Repository:
+## GitHub Repository
 
 https://github.com/Tinabcit/COMP2132-Project-Tina-Shabestari
 
----
-Thank you for reviewing my COMP2132 Study Hangman project.
+Thank you for taking the time to review my project.

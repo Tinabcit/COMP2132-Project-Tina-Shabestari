@@ -1,192 +1,278 @@
-// Variables
-//Creating the Variables for the colors and fonts
-$background-color: #1f2937;
-// card color
-$card-color: #374151;
-// primary color
-$primary-color: #10b981;
-// text color
-$text-color: #ffffff;
-// danger color
-$danger-color: #ef4444;
-// border radius
-$border-radius: 10px;
+/* 
+    Tina Shabestari
+    COMP2132 Project
+    StudentID: A01002676
+    Study Hangman Game
+    This file contains the styles for the Hangman project.
+*/
 
-// Mixin
-@mixin flexCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Colours used throughout the page */
+$bg: #eef2ff;
+$card: #ffffff;
+$primary: #4f46e5;
+$blue: #2563eb;
+$green: #16a34a;
+$danger: #dc2626;
+$text: #111827;
+$soft: #6b7280;
+
+/* Shadow mixin used on cards */
+@mixin softShadow {
+    box-shadow: 0 15px 35px rgba(30, 41, 59, 0.15);
 }
 
-// Animation
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-15px);
-  }
+/* Reusable border and rounded corners */
+@mixin roundedBox {
+    border-radius: 18px;
+    border: 1px solid #e5e7eb;
+}
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Fade in animation when page loads */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-// Body
+
+/* Main page styling */
 body {
-    // Background color
-    background-color: $background-color;
-    // color of the text
-    color: $text-color;
-    // minimum height of the body
-    min-height: 100vh;
-    // font family
+    margin: 0;
+    background: linear-gradient(135deg, #f8faff, $bg);
     font-family: Arial, Helvetica, sans-serif;
-
-    @include flexCenter;
-    // animation
-    animation: fadeIn 1s ease-in-out;
+    color: $text;
 }
-// Game container
-.game-container {
-    // background color
-    background-color: $card-color;
-    // padding
+
+/* Keeps content centered */
+.page {
+    max-width: 1150px;
+    margin: 30px auto;
     padding: 25px;
-    // border radius
-    border-radius: $border-radius;
-    // box shadow
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    // width
-    width: 500px;
-    // text align
-    text-align: center;
-    // animation    animation: fadeIn 0.8s ease-in-out;
-    animation: fadeIn 0.8s ease;
+}
 
-    // heading style (h1)
-    h1{
-        // margin bottom
-        margin-bottom: 20px;
-        // color
-        color: $primary-color;
-    }
-}
-// Hint container
-#hintBox {
-    // margin bottom
-    margin-bottom: 20px;
-    // font size
-    font-size: 18px;
-}
-// Word Container Display
-#wordDisplay{
-    // font size
-    font-size: 32px;
-    // letter spacing
-    letter-spacing: 8px;
-    // margin bottom
+/* Title section */
+.header {
     margin-bottom: 25px;
-}
-// Hangman Container Information
-#hangmanContainer {
-    // margin bottom
-    margin-bottom: 20px;
 
-    // pre tag style
-    pre {
-        // font size
+    h1 {
+        color: $primary;
+        font-size: 38px;
+        margin: 0;
+    }
+
+    p {
+        color: $soft;
         font-size: 18px;
-        // line height
-        line-height: 1.2;
+        margin-top: 10px;
     }
 }
-// Guess Section of the game
-.guess-section {
-    // margin bottom
+
+/* Main game container */
+.game-card {
+    background: $card;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    @include roundedBox;
+    @include softShadow;
+
+    animation: fadeIn 0.7s ease;
+}
+
+/* Hangman image area */
+.image-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        max-width: 460px;
+        border-radius: 18px;
+        border: 1px solid #e5e7eb;
+    }
+}
+
+/* Category display */
+.category-box {
+    background: #f5f3ff;
+    padding: 18px;
     margin-bottom: 20px;
 
-    // input style
-    input {
-        // padding
-        padding: 10px;
-        // font size
-        font-size: 20px;
-        // border radius
-        border-radius: $border-radius;
-        // border
-        border: none;
-        // width
-        width: 70px;
-        // text align
-        text-align: center;
+    @include roundedBox;
+
+    span {
+        display: block;
+        color: $soft;
+        margin-bottom: 6px;
+        font-weight: bold;
+    }
+
+    strong {
+        color: $primary;
+        font-size: 22px;
     }
 }
-// button style
-button {
-    // padding
-    padding: 10px 20px;
-    // font size
-    font-size: 16px;
-    // border radius
-    border-radius: $border-radius;
-    // border
-    border: none;
-    // background color
-    background-color: $primary-color;
-    // color of the text
-    color: $text-color;
-    // cursor pointer
-    cursor: pointer;
-    // transition
-    transition: background-color 0.3s;
 
-    // hover effect
-    &:hover {
-        // Transform scale
-        transform: scale(1.05);
+/* Wrong guesses and attempts */
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.stat {
+    padding: 18px;
+
+    @include roundedBox;
+
+    span {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
     }
-    // disabled state
+
+    strong {
+        font-size: 26px;
+    }
+}
+
+/* Red box */
+.danger {
+    background: #fff1f2;
+    color: $danger;
+}
+
+/* Blue box */
+.blue {
+    background: #eff6ff;
+    color: $blue;
+}
+
+/* Hint section */
+.hint-box {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 20px;
+
+    h3 {
+        margin: 0 0 8px 0;
+    }
+
+    p {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+/* Hidden word display */
+.word-display {
+    background: white;
+    padding: 25px;
+    font-size: 34px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    @include roundedBox;
+}
+
+/* Input and button row */
+.guess-row {
+    display: grid;
+    grid-template-columns: 1fr 170px;
+    gap: 12px;
+    margin-bottom: 15px;
+
+    input {
+        padding: 15px;
+        font-size: 17px;
+        border-radius: 12px;
+        border: 2px solid #c7d2fe;
+    }
+}
+
+/* All buttons */
+button {
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, $blue, $primary);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 15px 18px;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
     &:disabled {
-        // background color
-        background-color: $card-color;
-        // cursor not allowed
+        background: gray;
         cursor: not-allowed;
     }
 }
-// used letters container
-#usedLetters {
-    // margin bottom
-    margin-bottom: 20px;
-    // font size
-    font-size: 18px;
+
+/* Letters already guessed */
+.used-letters {
+    color: #4b5563;
+    font-size: 16px;
 }
-// message container
+
+/* Win or lose message */
 #message {
-    // font size
-    font-size: 24px;
-    // font weight
-    font-weight: bold;
-    // min height
-    min-height: 40px;
+    min-height: 35px;
 }
-// win or lose message container
+
+/* Win colour */
 .win {
-    // color
-    color: $primary-color;
+    color: $green;
 }
-// lose message container
+
+/* Lose colour */
 .lose {
-    // color
-    color: $danger-color;
+    color: $danger;
 }
-// hidden message container
+
+/* Play again button */
+#playAgainButton {
+    background: linear-gradient(135deg, $green, #22c55e);
+    margin-top: 10px;
+}
+
+/* Hide elements until needed */
 .hidden {
-    // display none
     display: none;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 850px) {
+
+    .game-card {
+        grid-template-columns: 1fr;
+    }
+
+    .guess-row {
+        grid-template-columns: 1fr;
+    }
+
+    .word-display {
+        font-size: 28px;
+        letter-spacing: 6px;
+    }
 }

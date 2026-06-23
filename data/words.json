@@ -1,0 +1,408 @@
+[
+    {
+        "category": "💻 Coding",
+        "word": "function",
+        "hint": "Reusable block of code"
+    },
+    {
+        "category": "💻 Coding",
+        "word": "variable",
+        "hint": "Stores a value in code"
+    },
+    {
+        "category": "💻 Coding",
+        "word": "javascript",
+        "hint": "Language used to make web pages interactive"
+    },
+    {
+        "category": "🌐 Web Development",
+        "word": "browser",
+        "hint": "Chrome, Firefox, Safari, or Edge"
+    },
+    {
+        "category": "🌐 Web Development",
+        "word": "stylesheet",
+        "hint": "A file used to style a web page"
+    },
+    {
+        "category": "🌐 Web Development",
+        "word": "website",
+        "hint": "A group of web pages online"
+    },
+    {
+        "category": "📚 School",
+        "word": "student",
+        "hint": "A person taking a course"
+    },
+    {
+        "category": "📚 School",
+        "word": "project",
+        "hint": "A larger assignment"
+    },
+    {
+        "category": "📚 School",
+        "word": "deadline",
+        "hint": "The final date something is due"
+    },
+    {
+        "category": "🎮 Gaming",
+        "word": "controller",
+        "hint": "Used to play video games"
+    },
+    {
+        "category": "🎮 Gaming",
+        "word": "multiplayer",
+        "hint": "Playing with others online"
+    },
+    {
+        "category": "🎮 Gaming",
+        "word": "achievement",
+        "hint": "A reward for completing a challenge in a game"
+    },
+    {
+        "category": "🎨 Art",
+        "word": "canvas",
+        "hint": "Surface for painting"
+    },
+    {
+        "category": "🎨 Art",
+        "word": "palette",
+        "hint": "Used to mix colors"
+    },
+    {
+        "category": "🎨 Art",
+        "word": "sketch",
+        "hint": "A rough drawing"
+    },
+    {
+        "category": "🍔 Food",
+        "word": "burger",
+        "hint": "A sandwich with a patty"
+    },
+    {
+        "category": "🍔 Food",
+        "word": "pizza",
+        "hint": "A dish with dough, sauce, and toppings"
+    },
+    {
+        "category": "🍔 Food",
+        "word": "sushi",
+        "hint": "A Japanese dish with rice and fish"
+    },
+    {
+        "category":"🍔 Food",
+        "word": "pasta",
+        "hint": "An Italian dish made from wheat and water"
+    },
+    {
+        "category": "🍔 Food",
+        "word": "salad",
+        "hint": "A side dish made with fresh vegetables"
+    },
+    {
+        "category": "🍔 Food",
+        "word": "ice cream",
+        "hint": "A sweet frozen treat"
+    },
+    {
+        "category": "🍔 Food",
+        "word": "sandwich",
+        "hint": "Two slices of bread with filling in between"
+    },
+    {
+        "category": "🍔 Food",
+        "word": "steak",
+        "hint": "A slice of meat, often grilled"
+    },
+    {
+        "category": "🍔 Food",
+        "word": "soup",
+        "hint": "A liquid dish, often served hot"
+    },
+    {
+        "category": "🍔 Food",
+        "word": "curry",
+        "hint": "A dish with a sauce, often spicy"
+    },
+    {
+        "category": "🍔 Food",
+        "word": "taco",
+        "hint": "A Mexican dish with a folded tortilla and filling"
+    },
+    {
+        "category": "🍔 Food",
+        "word": "pancakes",
+        "hint": "A breakfast dish made from batter and cooked on a griddle"
+    },
+    {
+        "category": "🍔 Food",
+        "word": "omelette",
+        "hint": "A dish made from beaten eggs cooked in a frying pan"
+    },
+    {
+        "category": "🍔 Food",
+        "word": "fries",
+        "hint": "Thin strips of potato that are fried"
+    },
+    {
+        "category": "🍔 Food",
+        "word": "donut",
+        "hint": "A sweet fried dough treat, often with a hole in the middle"
+    },
+    {
+        "category": "🍔 Food",
+        "word": "cookie",
+        "hint": "A sweet baked treat, often with chocolate chips"
+    },
+    {
+        "category": "🏀 Sports",
+        "word": "basketball",
+        "hint": "A sport played with a ball and hoop"
+    },
+    {
+        "category": "🏀 Sports",
+        "word": "soccer",
+        "hint": "A sport played with a round ball and goals"
+    },
+    {
+        "category": "🏀 Sports",
+        "word": "tennis",
+        "hint": "A sport played with rackets and a net"
+    },
+    {
+        "category": "🚗 Transportation",
+        "word": "car",
+        "hint": "A common mode of transportation"
+    },
+    {
+        "category": "🚗 Transportation",
+        "word": "bicycle",
+        "hint": "A two-wheeled vehicle powered by pedaling"
+    },
+    {
+        "category": "🚗 Transportation",
+        "word": "airplane",
+        "hint": "Used for flying long distances"
+    },
+    {
+        "category": "🎵 Music",
+        "word": "guitar",
+        "hint": "A stringed musical instrument"
+    },
+    {
+        "category": "🎵 Music",
+        "word": "piano",
+        "hint": "A keyboard instrument"
+    },
+    {
+        "category": "🎵 Music",
+        "word": "drums",
+        "hint": "A percussion instrument"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "smartphone",
+        "hint": "A mobile device with advanced features"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "laptop",
+        "hint": "A portable computer"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "tablet",
+        "hint": "A touchscreen device larger than a phone"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "headphones",
+        "hint": "Used to listen to audio privately"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "smartwatch",
+        "hint": "A wearable device that can track fitness and display notifications"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "router",
+        "hint": "A device that connects to the internet and allows multiple devices to access it"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "printer",
+        "hint": "A device that produces physical copies of digital documents"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "monitor",
+        "hint": "A screen used to display computer output"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "keyboard",
+        "hint": "An input device used for typing"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "mouse",
+        "hint": "An input device used to control a cursor on a computer screen"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "webcam",
+        "hint": "A camera used for video calls and streaming"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "microphone",
+        "hint": "A device that captures sound"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "speaker",
+        "hint": "A device that produces sound"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "charger",
+        "hint": "Used to power electronic devices"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "usb",
+        "hint": "A common type of connector for electronic devices"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "hard drive",
+        "hint": "Used for storing data on a computer"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "ram",
+        "hint": "Memory used by a computer to run programs"
+    },
+    {
+        "category": "📱 Technology",
+        "word": "processor",
+        "hint": "The brain of a computer that executes instructions"
+    },
+    {
+        "category": "🏀 Sports",
+        "word": "referee",
+        "hint": "A person who oversees and enforces the rules of a game"
+    },
+    {
+        "category": "🏀 Sports",
+        "word": "coach",
+        "hint": "A person who trains and leads a sports team"
+    },
+    {
+        "category":"📚 School",
+        "word": "homework",
+        "hint": "Assignments given to students to complete outside of class"
+    },
+    {
+        "category":"📚 School",
+        "word": "exam",
+        "hint": "A test to assess students' knowledge"
+    },
+    {
+        "category":"📚 School",
+        "word": "lecture",
+        "hint": "A formal presentation of information to students"
+    },
+    {
+        "category":"📚 School",
+        "word": "syllabus",
+        "hint": "An outline of the topics covered in a course"
+    },
+    {
+        "category":"📚 School",
+        "word": "textbook",
+        "hint": "A book used for studying a particular subject"
+    },
+    {
+        "category":"📚 School",
+        "word": "assignment",
+        "hint": "A task or project given to students to complete"
+    },
+    {
+        "category":"📚 School",
+        "word": "presentation",
+        "hint": "A speech or demonstration given by students to share information"
+    },
+    {
+        "category":"📚 School",
+        "word": "group project",
+        "hint": "An assignment completed by a team of students"
+    },
+    {
+        "category":"📚 School",
+        "word": "research paper",
+        "hint": "A written report on a specific topic, often based on research"
+    },
+    {
+        "category":"📚 School",
+        "word": "graduation",
+        "hint": "The ceremony marking the completion of a degree or course"
+    },
+    {
+        "category":"📚 School",
+        "word": "semester",
+        "hint": "A half-year term in a school or university"
+    },
+    {
+        "category":"📚 School",
+        "word": "professor",
+        "hint": "A teacher at a college or university"
+    },
+    {
+        "category":"📚 School",
+        "word": "dormitory",
+        "hint": "A building where students live on campus"
+    },
+    {
+        "category":"📚 School",
+        "word": "cafeteria",
+        "hint": "A place where students eat on campus"
+    },
+    {
+        "category":"📚 School",
+        "word": "library",
+        "hint": "A place where students can study and borrow books"
+    },
+    {
+        "category":"📚 School",
+        "word": "tutor",
+        "hint": "A person who provides additional help to students outside of class"
+    },
+    {
+        "category":"📚 School",
+        "word": "syllabus",
+        "hint": "An outline of the topics covered in a course"
+    },
+    {
+        "category":"📚 School",
+        "word": "attendance",
+        "hint": "The act of being present at school or class"
+    },
+    {
+        "category":"📚 School",
+        "word": "extracurricular",
+        "hint": "Activities outside of regular classes, such as clubs or sports"
+    },
+    {
+        "category":"📚 School",
+        "word": "semester",
+        "hint": "A half-year term in a school or university"
+    },
+    {
+        "category":"📚 School",
+        "word": "finals",
+        "hint": "Exams taken at the end of a semester to assess students' knowledge"
+    }
+
+]

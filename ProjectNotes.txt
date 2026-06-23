@@ -1,0 +1,89 @@
+Tina Shabestari
+COMP2132 Project
+Study Hangman
+
+## Project Description
+
+Study Hangman is a browser-based Hangman game created using HTML, SCSS, TypeScript, and JSON.
+
+The goal of the game is to correctly guess a hidden word before reaching the maximum number of incorrect guesses. The game randomly selects a word, category, and hint from a JSON file each time a new game starts.
+
+## Features
+
+* Random word selection from a JSON file
+* Multiple categories
+* Hint system
+* Tracks incorrect guesses
+* Displays hangman images
+* Win and lose messages
+* Play Again button
+* Responsive design
+* SCSS styling with mixins
+* TypeScript game logic
+
+## Categories Included
+
+* Coding
+* Web Development
+* School
+* Gaming
+* Art
+* Food
+* Sports
+* Transportation
+* Music
+* Technology
+
+## Files Included
+
+html/
+
+* index.html
+
+css/
+
+* style.scss
+* style.css
+
+js/
+
+* script.ts
+* script.js
+
+data/
+
+* words.json
+
+images/
+
+* hangman0.png
+* hangman1.png
+* hangman2.png
+* hangman3.png
+* hangman4.png
+* hangman5.png
+* hangman6.png
+
+## How to Play
+
+1. Read the category and hint.
+2. Enter one letter at a time.
+3. Correct letters will appear in the word.
+4. Incorrect letters increase the hangman progress.
+5. Guess the entire word before reaching 6 wrong guesses.
+6. Click Play Again to start a new game.
+
+## Image Credits
+
+Hangman images were created using Easy-Peasy AI Image Generator.
+
+Source:
+https://easy-peasy.ai/ai-image-generator/images/african-young-lady-coding-with-determination
+https://easy-peasy.ai/ai-image-generator/images/lady-coding-in-a-modern-office-with-a-laptop 
+
+## Author
+
+Tina Shabestari
+COMP2132 - Introduction to Javascript
+StudentID: A01002676
+Institute: BCIT
